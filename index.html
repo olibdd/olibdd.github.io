@@ -91,15 +91,16 @@
       <p>I'm a data science student focused on practical analytics and model‑driven insights across health tech and sports. I like clean code, strong baselines, and simple visuals that tell the story.</p>
       <div class="badges">
         <span class="chip">Python · NumPy · scikit‑learn</span>
-        <span class="chip">SQL · Power BI</span>
-        <span class="chip">Visualization</span>
-        <span class="chip">ML Ops basics</span>
+        <span class="chip">Rust</span>
+        <span class="chip">SQL · MongoDB</span>
+        <span class="chip">R</span>
+        <span class="chip">Power BI · Tableau</span>
       </div>
       <div class="cta">
         <a class="btn primary" href="#projects">See projects</a>
         <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download résumé</a>
-        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="mailto:olivia@example.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/olivia-b-dodds/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:olibd@bu.edu">Email</a>
       </div>
     </section>
 
@@ -107,8 +108,8 @@
       <div class="section-title"><h2>Projects</h2><div class="rule"></div></div>
       <div class="grid">
         <article class="card" aria-labelledby="p1">
-          <h3 id="p1">County Heart Disease Risk</h3>
-          <p>Predicted county‑level heart‑disease susceptibility using socio‑demographic features. Compared decision tree & Naive Bayes to a baseline to quantify lift.</p>
+          <h3 id="p1">Heart Disease Prediction</h3>
+          <p>Built ML models to predict county‑level heart‑disease risk by merging socio‑demographic and health outcome data; engineered features for 3,000+ U.S. counties and optimized Decision Tree & Naive Bayes with cross‑validation (≈82% accuracy).</p>
           <div class="meta">
             <div class="tags">
               <span class="tag">Classification</span><span class="tag">scikit‑learn</span><span class="tag">Pandas</span>
@@ -117,35 +118,32 @@
           </div>
         </article>
         <article class="card" aria-labelledby="p2">
-          <h3 id="p2">Swimmer Weight Modeling</h3>
-          <p>Modeled relationships among age, height, and weight; compared nested OLS specs and interpreted coefficients for practical predictions.</p>
+          <h3 id="p2">Ingredient Network Analysis</h3>
+          <p>Modeled ingredient co‑occurrence as a graph; used BFS and connectivity metrics to analyze clusters and common pairings; verified correctness with unit tests and strengthened Rust implementation.</p>
           <div class="meta">
             <div class="tags">
-              <span class="tag">Regression</span><span class="tag">Stats</span>
+              <span class="tag">Graphs</span><span class="tag">Rust</span>
             </div>
             <a class="btn" href="#">Notebook</a>
           </div>
         </article>
         <article class="card" aria-labelledby="p3">
-          <h3 id="p3">Facility Planning Mini‑App</h3>
-          <p>Interactive prototype to explore clinic locations vs. patient clusters; supports draggable epicenter and travel‑time summaries.</p>
+          <h3 id="p3">Social Media & Mental Health</h3>
+          <p>Ran descriptive statistics and pooled/unpooled t‑tests on survey data; produced clear R visuals for correlations and confidence intervals; wrote a report with actionable wellness insights.</p>
           <div class="meta">
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">Mapping</span><span class="tag">Prototyping</span>
+              <span class="tag">R</span><span class="tag">Stats</span>
             </div>
-            <a class="btn" href="#">Demo</a>
+            <a class="btn" href="#">Report</a>
           </div>
         </article>
-        <article class="card" aria-labelledby="p4">
-          <h3 id="p4">Sentiment on Tweets</h3>
-          <p>Naive Bayes sentiment analysis with custom preprocessing; inspected log‑priors and likelihoods; evaluated on hold‑out.</p>
-          <div class="meta">
-            <div class="tags">
-              <span class="tag">NLP</span><span class="tag">Naive Bayes</span>
-            </div>
-            <a class="btn" href="#">Code</a>
-          </div>
-        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title"><h2>Skills</h2><div class="rule"></div></div>
+      <div class="card">
+        <p><strong>Languages & Tools:</strong> Python, Rust, SQL, MongoDB, R, Excel, PowerPoint, Power BI, Tableau.</p>
       </div>
     </section>
 
@@ -153,22 +151,30 @@
       <div class="section-title"><h2>Experience</h2><div class="rule"></div></div>
       <div class="timeline">
         <div class="tl">
-          <h4>Information Technology Solutions Intern · Fresenius Medical Care</h4>
-          <small>Lexington, MA — 2025</small>
-          <p>Built SQL queries for termination‑delay analysis, created Power BI reports, cleaned LeanIX software inventory, and supported Legal & Compliance.</p>
+          <h4>Data Science Intern · Dr. Tabo Sikaneta Medical Corporation</h4>
+          <small>Scarborough, ON — Sept 2025 – Present</small>
+          <p>Ran geospatial clustering on 1,600+ patient locations to surface natural service areas and hotspots; compared cluster centroids to a draggable epicenter and summarized KPIs (size, travel distance, coverage%). Tuned clustering (elbow/silhouette) and flagged outliers that skew distance metrics.</p>
         </div>
         <div class="tl">
-          <h4>Data Science Projects · Boston University</h4>
-          <small>Boston, MA — 2023–2025</small>
-          <p>Course projects across ML, statistics, and data engineering fundamentals. Focus on clear explanations and reproducibility.</p>
+          <h4>Information Technology Solutions Intern · Fresenius Medical Care</h4>
+          <small>Lexington, MA — Jun 2025 – Aug 2025</small>
+          <p>Analyzed global software inventory to support Legal & Compliance; completed updates for 66 apps. Wrote SQL to analyze late terminations and linked findings to budget and security risk. Re‑categorized employee benefits (215 plans) with Excel pivots and tested UX updates.</p>
+        </div>
+        <div class="tl">
+          <h4>Boston University — B.S. in Data Science</h4>
+          <small>Boston, MA</small>
+          <p>Coursework: Foundations of DS, Probability & Statistics, Linear Algebra, Python for DS, Algorithms, Data Mechanics, Machine Learning, Business Analytics.</p>
         </div>
       </div>
     </section>
 
     <section id="about">
       <div class="section-title"><h2>About</h2><div class="rule"></div></div>
-      <div class="card">
-        <p>Hi, I’m Olivia — a data science student at BU and a middle‑distance runner. I like practical problems where careful baselines beat over‑fitted models. When I’m not debugging, I’m on the track working on 800m speed.</p>
+      <div class="card" style="display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:center">
+        <img src="headshot.jpg" alt="Olivia Dodds" style="width:100px;height:100px;border-radius:12px;object-fit:cover;border:1px solid var(--border)"/>
+        <div>
+          <p>Hi! I’m Olivia — a middle‑distance runner and data science student who’s happiest splitting time between the track and a good dataset. I love reading and movies (Fleabag is my all‑time favorite), I’m Boston‑obsessed, and I’m always looking to learn something new. I’m a school record holder on the track, and I’ll be pursuing an MSBA at BU’s Questrom School of Business in Fall 2026.</p>
+        </div>
       </div>
     </section>
 
@@ -192,7 +198,7 @@
           </div>
           <div class="cta" style="margin-top:12px">
             <button class="btn primary" type="submit">Send</button>
-            <a class="btn" href="mailto:olivia@example.com">Or email me directly</a>
+            <a class="btn" href="mailto:olibd@bu.edu">Or email me directly</a>
           </div>
         </form>
       </div>
@@ -208,3 +214,4 @@
   </script>
 </body>
 </html>
+
