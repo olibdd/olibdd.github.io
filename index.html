@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olivia Dodds · Portfolio</title>
+  <meta name="description" content="Data science student & athlete – portfolio, projects, resume, and contact." />
+  <style>
+    :root{
+      --bg:#0b0c10;--panel:#111217;--ink:#e6e6e6;--muted:#a9b0b6;--accent:#6ee7b7;--accent-2:#60a5fa;
+      --border:#1f2330;--chip:#1a1d26;--shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0c10 0%, #0f1117 100%);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1000px;margin:0 auto;padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#0a0a0a}
+    nav a{padding:8px 12px;border-radius:10px;color:var(--muted)}
+    nav a:hover{background:var(--chip);color:var(--ink)}
+
+    .hero{margin-top:16px;padding:28px;border:1px solid var(--border);border-radius:20px;background:radial-gradient(1200px 500px at 80% -10%, rgba(96,165,250,.15), transparent 60%),var(--panel);box-shadow:var(--shadow)}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 10px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:14px;color:#cbd5e1}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#12141b;color:var(--ink);font-weight:600}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 18px rgba(0,0,0,.25)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a0a0a;border:none}
+
+    section{margin:42px 0}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+    .section-title h2{margin:0;font-size:22px}
+    .section-title .rule{height:1px;flex:1;background:linear-gradient(90deg,var(--border),transparent)}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;border:1px solid var(--border);background:var(--panel);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .card h3{margin:2px 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+
+    @media(min-width:720px){
+      .card{grid-column:span 6}
+    }
+
+    footer{margin:64px 0 20px;color:var(--muted);text-align:center}
+
+    /* Project card extras */
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;background:#0f1421;border:1px solid var(--border);padding:4px 8px;border-radius:999px;color:#9fb3c8}
+
+    /* Timeline */
+    .timeline{border-left:2px solid var(--border);padding-left:16px}
+    .tl{margin:0 0 18px}
+    .tl h4{margin:0 0 4px}
+    .tl small{color:var(--muted)}
+
+    /* Contact */
+    .contact-grid{display:grid;gap:12px}
+    @media(min-width:640px){.contact-grid{grid-template-columns:1fr 1fr}}
+    input, textarea{width:100%;background:#0e1118;border:1px solid var(--border);color:var(--ink);padding:12px;border-radius:12px}
+    textarea{min-height:110px}
+    label{font-size:14px;color:#c7cdd4}
+
+    .sr{position:absolute;left:-9999px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">OD</div>
+        <div>
+          <strong>Olivia Dodds</strong><br/>
+          <small style="color:var(--muted)">Data Science @ BU · Middle‑distance runner</small>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>Turning messy data into clear decisions.</h1>
+      <p>I'm a data science student focused on practical analytics and model‑driven insights across health tech and sports. I like clean code, strong baselines, and simple visuals that tell the story.</p>
+      <div class="badges">
+        <span class="chip">Python · NumPy · scikit‑learn</span>
+        <span class="chip">SQL · Power BI</span>
+        <span class="chip">Visualization</span>
+        <span class="chip">ML Ops basics</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:olivia@example.com">Email</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title"><h2>Projects</h2><div class="rule"></div></div>
+      <div class="grid">
+        <article class="card" aria-labelledby="p1">
+          <h3 id="p1">County Heart Disease Risk</h3>
+          <p>Predicted county‑level heart‑disease susceptibility using socio‑demographic features. Compared decision tree & Naive Bayes to a baseline to quantify lift.</p>
+          <div class="meta">
+            <div class="tags">
+              <span class="tag">Classification</span><span class="tag">scikit‑learn</span><span class="tag">Pandas</span>
+            </div>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="p2">
+          <h3 id="p2">Swimmer Weight Modeling</h3>
+          <p>Modeled relationships among age, height, and weight; compared nested OLS specs and interpreted coefficients for practical predictions.</p>
+          <div class="meta">
+            <div class="tags">
+              <span class="tag">Regression</span><span class="tag">Stats</span>
+            </div>
+            <a class="btn" href="#">Notebook</a>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="p3">
+          <h3 id="p3">Facility Planning Mini‑App</h3>
+          <p>Interactive prototype to explore clinic locations vs. patient clusters; supports draggable epicenter and travel‑time summaries.</p>
+          <div class="meta">
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Mapping</span><span class="tag">Prototyping</span>
+            </div>
+            <a class="btn" href="#">Demo</a>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="p4">
+          <h3 id="p4">Sentiment on Tweets</h3>
+          <p>Naive Bayes sentiment analysis with custom preprocessing; inspected log‑priors and likelihoods; evaluated on hold‑out.</p>
+          <div class="meta">
+            <div class="tags">
+              <span class="tag">NLP</span><span class="tag">Naive Bayes</span>
+            </div>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title"><h2>Experience</h2><div class="rule"></div></div>
+      <div class="timeline">
+        <div class="tl">
+          <h4>Information Technology Solutions Intern · Fresenius Medical Care</h4>
+          <small>Lexington, MA — 2025</small>
+          <p>Built SQL queries for termination‑delay analysis, created Power BI reports, cleaned LeanIX software inventory, and supported Legal & Compliance.</p>
+        </div>
+        <div class="tl">
+          <h4>Data Science Projects · Boston University</h4>
+          <small>Boston, MA — 2023–2025</small>
+          <p>Course projects across ML, statistics, and data engineering fundamentals. Focus on clear explanations and reproducibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title"><h2>About</h2><div class="rule"></div></div>
+      <div class="card">
+        <p>Hi, I’m Olivia — a data science student at BU and a middle‑distance runner. I like practical problems where careful baselines beat over‑fitted models. When I’m not debugging, I’m on the track working on 800m speed.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title"><h2>Contact</h2><div class="rule"></div></div>
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Thanks! This demo form just shows the UI. Replace with your form service (e.g. Formspree).');">
+          <div class="contact-grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div style="margin-top:12px">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" placeholder="Hi Olivia, ..." required></textarea>
+          </div>
+          <div class="cta" style="margin-top:12px">
+            <button class="btn primary" type="submit">Send</button>
+            <a class="btn" href="mailto:olivia@example.com">Or email me directly</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Olivia Dodds · Made with plain HTML/CSS
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
